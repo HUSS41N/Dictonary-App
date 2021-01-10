@@ -17,8 +17,6 @@ getDictonaryData = () => {
     else{
         getDictonary(word).then((res)=>{
             showDictoanryDataToUser(res)
-            console.log(res);
-            console.log(res[0].meanings[0].definitions[0]['definition']);
         }).catch((error)=>{
             document.getElementById('data').innerHTML = 'Check your spelling & Try Again';
           })
